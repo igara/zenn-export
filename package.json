@@ -1,0 +1,23 @@
+{
+  "name": "zenn-export",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igara/zenn-export.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igara/zenn-export/issues"
+  },
+  "homepage": "https://github.com/igara/zenn-export#readme",
+  "dependencies": {
+    "zenn-cli": "^0.1.66"
+  }
+}
