@@ -15,7 +15,7 @@ https://zenn.dev/ryo_kawamata/articles/times-all-bot
 
 https://github.com/igara/bot_slack_matome_channnel
 
-![](https://storage.googleapis.com/zenn-user-upload/fg4xt72avvy0slmn1fjz6sc4vdrw)
+![](/images/bot_slack_matome_channnel/slack_bot_message.gif)
 
 オプションで集約したくないチャンネルの場合は無視できるようなものを作成しました。  
 
@@ -51,7 +51,7 @@ https://api.slack.com/apps からアプリを作成し、
 
 usersのscopeはSpreadsheetに情報を残した際にメールアドレスもGoogle Workspaceとの連携も楽そうという未来実装的に入れているものなので本題では不要なscopeだったりします。  
 
-![](https://storage.googleapis.com/zenn-user-upload/cjwiss9njt6ngg5xt78dl572q0cp)
+![](/images/bot_slack_matome_channnel/slack_bot_scope.jpg)
 
 設定が完了したら **OAuth & Permissions** の画面上部にある **Bot User OAuth Token** の値をコピーしましょう。  
 
@@ -104,9 +104,9 @@ npx clasp push
 
 上記を実行するとSpreadsheetが作成され、その中にあるスクリプトエディターを開くとGASも追加されているかと思います。
 
-![](https://storage.googleapis.com/zenn-user-upload/4mfef9rtb0tfdieg6uk7ja6vywmc)
+![](/images/bot_slack_matome_channnel/create_spreadsheet.jpg)
 
-![](https://storage.googleapis.com/zenn-user-upload/d9slij98yqk5j59srm2wbsjptko9)
+![](/images/bot_slack_matome_channnel/create_gas.jpg)
 
 ### SpreadsheetにSlackの情報を読み込む
 
@@ -136,7 +136,7 @@ https://github.com/igara/bot_slack_matome_channnel/blob/master/dist/appsscript.j
 
 スクリプトエディターのメニューから 公開 -> ウェブアプリケーションとして導入から更新を実行し、
 
-![](https://storage.googleapis.com/zenn-user-upload/o2dss1psppqvu9n0mn0g1az7488w)
+![](/images/bot_slack_matome_channnel/update_gas_web_appllication.jpg)
 
 公開したWebアプリケーションのURLをコピーします。
 
@@ -144,7 +144,7 @@ https://github.com/igara/bot_slack_matome_channnel/blob/master/dist/appsscript.j
 
 **Request URL** に公開したGASのWebアプリケーションのURLを貼り、**Verified** が表示されるか確認します。
 
-![](https://storage.googleapis.com/zenn-user-upload/bf9w0zrwhevccrqpca4gkwk4g4sy)
+![](/images/bot_slack_matome_channnel/slack_event_request_url.jpg)
 
 確認できたら、 **Subscribe to bot events** の項目で
 
@@ -152,7 +152,7 @@ https://github.com/igara/bot_slack_matome_channnel/blob/master/dist/appsscript.j
 
 を登録してください。
 
-![](https://storage.googleapis.com/zenn-user-upload/mbk5z4rh11j7rjcdnizs0tgn3a20)
+![](/images/bot_slack_matome_channnel/slack_event_bot.jpg)
 
 以上で設定は完了です。  
 Slackで対象のチャンネルを作成してメッセージを投稿してみてボットのメッセージが送られるようになっていたら成功です。
