@@ -149,6 +149,6 @@ npmを見習いたい
 
 #### ビルド・テスト
 
-[https://zenn.dev/igara/articles/monorepo_nextjs#%E3%83%93%E3%83%AB%E3%83%89%E3%81%AE%E8%A8%AD%E5%AE%9Anextjs%E3%81%AE%E3%82%92%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%A4%E3%81%8B%E3%81%A3%E3%81%A6%E3%82%8B](過去記事)でちょっとだけ触れてる
+[過去記事](https://zenn.dev/igara/articles/monorepo_nextjs#%E3%83%93%E3%83%AB%E3%83%89%E3%81%AE%E8%A8%AD%E5%AE%9Anextjs%E3%81%AE%E3%82%92%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%A4%E3%81%8B%E3%81%A3%E3%81%A6%E3%82%8B)でちょっとだけ触れてる
 
 パス指定による共通のビルド・テスト設定の読み込みが可能だとモノレポ間でも設定に困るということは少なくなる
