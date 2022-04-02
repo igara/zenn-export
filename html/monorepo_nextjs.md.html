@@ -61,11 +61,14 @@ ESLintの有効化や保存時のフォーマッタ設定<br>
 <p>設定について<a href="https://github.com/igara/syonet_eight/tree/master/.storybook" target="_blank" rel="nofollow noopener noreferrer">こちら</a>になります。</p>
 <p><code>yarn storybook</code> によりコンポーネントのカタログのようなものを閲覧できます。</p>
 <p>サブプロジェクトにある <code>xxx.stories.mdx</code> を元に作成されます。</p>
-<p><img src="/images/monorepo_nextjs/storybook_props.jpg" alt="storybook_props"></p>
+<p><img src="https://raw.githubusercontent.com/igara/zenn-export
+/main/images/monorepo_nextjs/storybook_props.jpg" alt="storybook_props"></p>
 <p>軽くコンポーネントのPropsの検証ができたり</p>
-<p><img src="/images/monorepo_nextjs/storybook_accessibility.jpg" alt="storybook_accessibility"></p>
+<p><img src="https://raw.githubusercontent.com/igara/zenn-export
+/main/images/monorepo_nextjs/storybook_accessibility.jpg" alt="storybook_accessibility"></p>
 <p>使用しているタグなど実装に関してのアクセシビリティが適切そうかチェックしたり</p>
-<p><img src="/images/monorepo_nextjs/storybook_performance.jpg" alt="storybook_performance"></p>
+<p><img src="https://raw.githubusercontent.com/igara/zenn-export
+/main/images/monorepo_nextjs/storybook_performance.jpg" alt="storybook_performance"></p>
 <p>レンダリングのパフォーマンス確認などできるようにしています</p>
 <h4 id="ci%E3%81%AE%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%AB%E3%82%88%E3%82%8B%E5%85%A8%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AEut%E5%AE%9F%E8%A1%8C"><a class="header-anchor-link" href="#ci%E3%81%AE%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%AB%E3%82%88%E3%82%8B%E5%85%A8%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AEut%E5%AE%9F%E8%A1%8C" aria-hidden="true"></a> CIのスケジュールによる全プロジェクトのUT実行</h4>
 <p>設定について<a href="https://github.com/igara/syonet_eight/blob/master/.github/workflows/root.yml" target="_blank" rel="nofollow noopener noreferrer">こちら</a></p>
@@ -77,9 +80,11 @@ ESLintの有効化や保存時のフォーマッタ設定<br>
 <p>NextJSの本家<a href="https://vercel.com" target="_blank" rel="nofollow noopener noreferrer">Vercel</a> でもいいんですけどAWSにデプロイ可能な<a href="https://www.serverless.com/" target="_blank" rel="nofollow noopener noreferrer">Serverless Framework</a>を採用しています。</p>
 <p>デプロイの仕組みの説明難しいですが <a href="https://github.com/igara/syonet_eight_www/blob/master/serverless.yml" target="_blank" rel="nofollow noopener noreferrer">serverless.yml</a> の情報がAWSのCloudFormationのテンプレートとして展開されてAWSのそれぞれのサービスをよしなに使って1つのWebサービスを作ってしまうというものです。</p>
 <p>下記の図はデプロイで反映するAWSのサービスのイメージになります。</p>
-<p><img src="/images/monorepo_nextjs/serverless_nextjs.drawio.png" alt="serverless_nextjs"></p>
+<p><img src="https://raw.githubusercontent.com/igara/zenn-export
+/main/images/monorepo_nextjs/serverless_nextjs.drawio.png" alt="serverless_nextjs"></p>
 <p>それぞれのAWSのサービスが外部のユーザから見てどう使われているのかのイメージを記載すると</p>
-<p><img src="/images/monorepo_nextjs/serverless_service.drawio.png" alt="serverless_service"></p>
+<p><img src="https://raw.githubusercontent.com/igara/zenn-export
+/main/images/monorepo_nextjs/serverless_service.drawio.png" alt="serverless_service"></p>
 <p>なのをServerless Next.js Componentで再現できちゃうらしいです。<br>
 SPA想定だったReactの資産をフル活用できますね。</p>
 <h3 id="%E3%82%B5%E3%83%96%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%3A-syonet_eight_design_system"><a class="header-anchor-link" href="#%E3%82%B5%E3%83%96%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%3A-syonet_eight_design_system" aria-hidden="true"></a> サブプロジェクト: <a href="https://github.com/igara/syonet_eight_design_system" target="_blank" rel="nofollow noopener noreferrer">syonet_eight_design_system</a></h3>
@@ -94,7 +99,8 @@ SPA想定だったReactの資産をフル活用できますね。</p>
 <h4 id="figma%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%91%E3%83%BC%E3%83%84%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88"><a class="header-anchor-link" href="#figma%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%83%91%E3%83%BC%E3%83%84%E3%81%AE%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88" aria-hidden="true"></a> Figmaで作成したパーツのインポート</h4>
 <p><code>yarn import:figma</code> でFigmaで作成したものをインポートするような仕組みを作ってます。</p>
 <p>実装したコードはこちらです</p>
-<p><div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fsyonet_eight_design_system%2Fblob%2Fmaster%2Fsrc%2Fscripts%2Ffigma.ts" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/syonet_eight_design_system/blob/master/src/scripts/figma.ts" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/syonet_eight_design_system/blob/master/src/scripts/figma.ts</a></p>
+<p><div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
+/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fsyonet_eight_design_system%2Fblob%2Fmaster%2Fsrc%2Fscripts%2Ffigma.ts" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/syonet_eight_design_system/blob/master/src/scripts/figma.ts" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/syonet_eight_design_system/blob/master/src/scripts/figma.ts</a></p>
 <p>SVG化して使うのは結構安易そうですが、DOMとして扱うのは難しめにみてます。<br>
 (だってあいつらNodeIDの順番とか位置関係ようわからんし)</p>
 <h4 id="%E3%83%93%E3%83%AB%E3%83%89%E3%81%AE%E8%A8%AD%E5%AE%9Anextjs%E3%81%AE%E3%82%92%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%A4%E3%81%8B%E3%81%A3%E3%81%A6%E3%82%8B"><a class="header-anchor-link" href="#%E3%83%93%E3%83%AB%E3%83%89%E3%81%AE%E8%A8%AD%E5%AE%9Anextjs%E3%81%AE%E3%82%92%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E3%81%A4%E3%81%8B%E3%81%A3%E3%81%A6%E3%82%8B" aria-hidden="true"></a> ビルドの設定NextJSのをそのままつかってる</h4>
@@ -106,25 +112,32 @@ SPA想定だったReactの資産をフル活用できますね。</p>
 <h4 id="%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%E3%83%AA%E3%82%B0%E3%83%AC%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E5%AE%9F%E6%96%BD"><a class="header-anchor-link" href="#%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%E3%83%AA%E3%82%B0%E3%83%AC%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%E5%AE%9F%E6%96%BD" aria-hidden="true"></a> ビジュアルリグレッションテスト実施</h4>
 <p><a href="https://reg-viz.github.io/reg-suit/" target="_blank" rel="nofollow noopener noreferrer">reg-suit</a>というGitのプッシュを実行した際にコンポーネントの差分をビジュアライズする仕組みを入れてます。</p>
 <p>例えばこんな差分があったときに</p>
-<p><div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fsyonet_eight_design_system%2Fcommit%2Fbf6de6cbd274e239e73f4eb39391bd9b060cb74b" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/syonet_eight_design_system/commit/bf6de6cbd274e239e73f4eb39391bd9b060cb74b" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/syonet_eight_design_system/commit/bf6de6cbd274e239e73f4eb39391bd9b060cb74b</a></p>
+<p><div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
+/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fsyonet_eight_design_system%2Fcommit%2Fbf6de6cbd274e239e73f4eb39391bd9b060cb74b" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/syonet_eight_design_system/commit/bf6de6cbd274e239e73f4eb39391bd9b060cb74b" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/syonet_eight_design_system/commit/bf6de6cbd274e239e73f4eb39391bd9b060cb74b</a></p>
 <p>差分としての検知として</p>
-<p><img src="/images/monorepo_nextjs/reg_suit_top.jpg" alt="reg_suit_top"></p>
+<p><img src="https://raw.githubusercontent.com/igara/zenn-export
+/main/images/monorepo_nextjs/reg_suit_top.jpg" alt="reg_suit_top"></p>
 <p>一覧が表示されて詳細をみようとすると</p>
-<p><img src="/images/monorepo_nextjs/reg_suit_diff.gif" alt="reg_suit_diff"></p>
+<p><img src="https://raw.githubusercontent.com/igara/zenn-export
+/main/images/monorepo_nextjs/reg_suit_diff.gif" alt="reg_suit_diff"></p>
 <p>どのへんに差分があるのかというのをビジュアライズしてくれます。</p>
 <p>CIの設定としてこちらになります。</p>
-<p><div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fsyonet_eight_design_system%2Fblob%2Fmaster%2F.github%2Fworkflows%2Fvrt.yml" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/syonet_eight_design_system/blob/master/.github/workflows/vrt.yml" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/syonet_eight_design_system/blob/master/.github/workflows/vrt.yml</a></p>
+<p><div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
+/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fsyonet_eight_design_system%2Fblob%2Fmaster%2F.github%2Fworkflows%2Fvrt.yml" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/syonet_eight_design_system/blob/master/.github/workflows/vrt.yml" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/syonet_eight_design_system/blob/master/.github/workflows/vrt.yml</a></p>
 <p>GitHub Actions上では日本語フォントがないので <code>fonts-noto</code> をインストールする必要があったりします。</p>
 <p>あとはこちらのテストの結果は現状Slackで通知がくることを確認しています。</p>
-<p><img src="/images/monorepo_nextjs/slack.png" alt="slack"></p>
+<p><img src="https://raw.githubusercontent.com/igara/zenn-export
+/main/images/monorepo_nextjs/slack.png" alt="slack"></p>
 <aside class="msg message"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 101" role="img" aria-label="message" class="msg-icon"><circle cx="51" cy="51" r="50" fill="currentColor"></circle><text x="50%" y="50%" text-anchor="middle" fill="#ffffff" font-size="70" font-weight="bold" dominant-baseline="central">!</text></svg><div class="msg-content"><p>GitHubのPRに対してテスト結果をコメントしてくれる機能もありますがこれに関しては正常に動作してません...</p>
 </div></aside>
 <h4 id="css-in-js%E3%81%A8%E3%81%97%E3%81%A6emotion%E6%8E%A1%E7%94%A8"><a class="header-anchor-link" href="#css-in-js%E3%81%A8%E3%81%97%E3%81%A6emotion%E6%8E%A1%E7%94%A8" aria-hidden="true"></a> CSS in JSとしてemotion採用</h4>
 <p>好みですが、</p>
 <div class="code-block-container"><pre class=""><code class="">import { css } from '@emotion/react';
 </code></pre></div><p>で<a href="https://github.com/css-modules/css-modules" target="_blank" rel="nofollow noopener noreferrer">CSS Modules</a>ぽくもpropsでCSSの値指定できるようないいとこ取りな書き方よくないっすか？</p>
-<p><div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fsyonet_eight_design_system%2Fblob%2Fmaster%2Fsrc%2Fcomponents%2Ficons%2Fmenu_icon%2Fmenu_icon.styles.ts" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/syonet_eight_design_system/blob/master/src/components/icons/menu_icon/menu_icon.styles.ts" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/syonet_eight_design_system/blob/master/src/components/icons/menu_icon/menu_icon.styles.ts</a><br style="display: none">
-<div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fsyonet_eight_design_system%2Fblob%2Fmaster%2Fsrc%2Fcomponents%2Ficons%2Fmenu_icon%2Fmenu_icon.tsx" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/syonet_eight_design_system/blob/master/src/components/icons/menu_icon/menu_icon.tsx" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/syonet_eight_design_system/blob/master/src/components/icons/menu_icon/menu_icon.tsx</a></p>
+<p><div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
+/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fsyonet_eight_design_system%2Fblob%2Fmaster%2Fsrc%2Fcomponents%2Ficons%2Fmenu_icon%2Fmenu_icon.styles.ts" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/syonet_eight_design_system/blob/master/src/components/icons/menu_icon/menu_icon.styles.ts" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/syonet_eight_design_system/blob/master/src/components/icons/menu_icon/menu_icon.styles.ts</a><br style="display: none">
+<div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
+/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fsyonet_eight_design_system%2Fblob%2Fmaster%2Fsrc%2Fcomponents%2Ficons%2Fmenu_icon%2Fmenu_icon.tsx" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/syonet_eight_design_system/blob/master/src/components/icons/menu_icon/menu_icon.tsx" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/syonet_eight_design_system/blob/master/src/components/icons/menu_icon/menu_icon.tsx</a></p>
 <h3 id="%E3%82%B5%E3%83%96%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%3A-syonet_eight_storybook"><a class="header-anchor-link" href="#%E3%82%B5%E3%83%96%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%3A-syonet_eight_storybook" aria-hidden="true"></a> サブプロジェクト: <a href="https://github.com/igara/syonet_eight/tree/master/projects/syonet_eight_storybook" target="_blank" rel="nofollow noopener noreferrer">syonet_eight_storybook</a></h3>
 <p>Storybookを配布するように<a href="https://github.com/igara/syonet_eight/blob/master/projects/syonet_eight_storybook/serverless.yml" target="_blank" rel="nofollow noopener noreferrer">serverless.yml</a>しか置いてないです。</p>
 <p>これもServerless Frameworkのコンポーネントをつかっており、<a href="https://github.com/serverless-components/website" target="_blank" rel="nofollow noopener noreferrer">website</a>というものを使っています。</p>
