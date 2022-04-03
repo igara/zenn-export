@@ -21,8 +21,8 @@ svg {
 </style>
 <div class="znc">
   ${html.replace(
-    /src="/g,
-    `src="https://raw.githubusercontent.com/${repositoryName}/main`,
+    /img src="/g,
+    `img src="https://raw.githubusercontent.com/${repositoryName}/main`,
   )}
 </div>`;
 

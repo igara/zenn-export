@@ -15,12 +15,10 @@ topics: [&quot;slack&quot;, &quot;gas&quot;, &quot;googleappsscrip&quot;]<br>
 published: true</h2>
 <p>作ろうとした背景としてメンバー各位が書く分報チャンネルがあってチャンネル参加してなくても一括に確認できるようなものがあったらいいなと思っていたので作ってみた感じです。</p>
 <p>Slackの分報を社内Twitterに！皆の分報を一つのチャネルに集約するSlackボットを作ってみた<br style="display: none">
-<div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
-/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fzenn.dev%2Fryo_kawamata%2Farticles%2Ftimes-all-bot" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://zenn.dev/ryo_kawamata/articles/times-all-bot" style="display: none" target="_blank">https://zenn.dev/ryo_kawamata/articles/times-all-bot</a><br style="display: none">
+<div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fzenn.dev%2Fryo_kawamata%2Farticles%2Ftimes-all-bot" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://zenn.dev/ryo_kawamata/articles/times-all-bot" style="display: none" target="_blank">https://zenn.dev/ryo_kawamata/articles/times-all-bot</a><br style="display: none">
 のパクリですがGAS版として投稿しています。</p>
 <h2 id="%E4%BD%9C%E6%88%90%E7%89%A9"><a class="header-anchor-link" href="#%E4%BD%9C%E6%88%90%E7%89%A9" aria-hidden="true"></a> 作成物</h2>
-<p><div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
-/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fbot_slack_matome_channnel" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/bot_slack_matome_channnel" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/bot_slack_matome_channnel</a></p>
+<p><div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fbot_slack_matome_channnel" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/bot_slack_matome_channnel" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/bot_slack_matome_channnel</a></p>
 <p><img src="https://raw.githubusercontent.com/igara/zenn-export
 /main/images/bot_slack_matome_channnel/slack_bot_message.gif" alt=""></p>
 <p>オプションで集約したくないチャンネルの場合は無視できるようなものを作成しました。</p>
@@ -112,16 +110,14 @@ npx clasp push
 <li><strong>get_users.ts.gs</strong> の <strong>getUsers</strong> を実行してシートにユーザの情報を残す</li>
 </ul>
 <p>スクリプトエディターを経由しないで実行する方法として</p>
-<p><div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
-/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fqiita.com%2Fjiroshin%2Fitems%2Fdcc398285c652554e66a%23%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E3%2581%258B%25E3%2582%2589gas%25E3%2582%2592%25E5%258F%25A9%25E3%2581%258F" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://qiita.com/jiroshin/items/dcc398285c652554e66a#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%8B%E3%82%89gas%E3%82%92%E5%8F%A9%E3%81%8F" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://qiita.com/jiroshin/items/dcc398285c652554e66a#ローカルからgasを叩く</a></p>
+<p><div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fqiita.com%2Fjiroshin%2Fitems%2Fdcc398285c652554e66a%23%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E3%2581%258B%25E3%2582%2589gas%25E3%2582%2592%25E5%258F%25A9%25E3%2581%258F" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://qiita.com/jiroshin/items/dcc398285c652554e66a#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%8B%E3%82%89gas%E3%82%92%E5%8F%A9%E3%81%8F" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://qiita.com/jiroshin/items/dcc398285c652554e66a#ローカルからgasを叩く</a></p>
 <p>にあるようなGoogle Cloud Consoleと自前で作成したClaspのログインができていれば</p>
 <div class="code-block-container"><pre class=""><code class="">npx clasp run createSheets
 npx clasp run getChannels
 npx clasp run getUsers
 </code></pre></div><p>というようなコマンドで実行が可能です。<br>
 その際のGoogleアプリのスコープ設定はこちらの設定がされていればよいはず<br style="display: none">
-<div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
-/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fbot_slack_matome_channnel%2Fblob%2Fmaster%2Fdist%2Fappsscript.json%23L14-L29" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/bot_slack_matome_channnel/blob/master/dist/appsscript.json#L14-L29" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/bot_slack_matome_channnel/blob/master/dist/appsscript.json#L14-L29</a></p>
+<div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fbot_slack_matome_channnel%2Fblob%2Fmaster%2Fdist%2Fappsscript.json%23L14-L29" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/bot_slack_matome_channnel/blob/master/dist/appsscript.json#L14-L29" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/bot_slack_matome_channnel/blob/master/dist/appsscript.json#L14-L29</a></p>
 <h3 id="web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B"><a class="header-anchor-link" href="#web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B" aria-hidden="true"></a> Webアプリケーション公開する</h3>
 <p>スクリプトエディターのメニューから 公開 -&gt; ウェブアプリケーションとして導入から更新を実行し、</p>
 <p><img src="https://raw.githubusercontent.com/igara/zenn-export
@@ -153,14 +149,12 @@ GAS経由にシートを作成する</p>
 ChannelsSheet<span class="token punctuation">.</span><span class="token function">getRange</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> channelsSheetColumnNames<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setValues</span><span class="token punctuation">(</span><span class="token punctuation">[</span>channelsSheetColumnNames<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><p>な削除して再度シート作成するような作りになっている</p>
 <p>過去に作ったGoogle API経由でCSVを元にシートを作成するのもありっちゃあり<br style="display: none">
-<div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
-/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fspreadsheet_master%2Fblob%2Fmaster%2Fsrc%2Ftasks%2Frecreate_spreadsheet.ts" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/spreadsheet_master/blob/master/src/tasks/recreate_spreadsheet.ts" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/spreadsheet_master/blob/master/src/tasks/recreate_spreadsheet.ts</a></p>
+<div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fspreadsheet_master%2Fblob%2Fmaster%2Fsrc%2Ftasks%2Frecreate_spreadsheet.ts" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/spreadsheet_master/blob/master/src/tasks/recreate_spreadsheet.ts" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/spreadsheet_master/blob/master/src/tasks/recreate_spreadsheet.ts</a></p>
 <p>ローカルPCで実行するよりGASの環境で実行したい気持ちが今回強かった</p>
 <h3 id="src%2Fgas%2Fdo_post.ts"><a class="header-anchor-link" href="#src%2Fgas%2Fdo_post.ts" aria-hidden="true"></a> <a href="https://github.com/igara/bot_slack_matome_channnel/blob/master/src/gas/do_post.ts" target="_blank" rel="nofollow noopener noreferrer">src/gas/do_post.ts</a></h3>
 <p>SlackのEvent Subscriptions経由できたメッセージがリクエストされて処理を実行するGASの関数</p>
 <p>今回設定したEvent Subscriptionsがメッセージに対する更新系もプッシュされていたので除外するために書いた処理がこちら</p>
-<p><div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
-/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fbot_slack_matome_channnel%2Fblob%2Fmaster%2Fsrc%2Fgas%2Fdo_post.ts%23L9-L23" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/bot_slack_matome_channnel/blob/master/src/gas/do_post.ts#L9-L23" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/bot_slack_matome_channnel/blob/master/src/gas/do_post.ts#L9-L23</a></p>
+<p><div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fgithub.com%2Figara%2Fbot_slack_matome_channnel%2Fblob%2Fmaster%2Fsrc%2Fgas%2Fdo_post.ts%23L9-L23" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://github.com/igara/bot_slack_matome_channnel/blob/master/src/gas/do_post.ts#L9-L23" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://github.com/igara/bot_slack_matome_channnel/blob/master/src/gas/do_post.ts#L9-L23</a></p>
 <p>必要に応じて除外しているものを活用してみるのも良さそう<br>
 なおGASの利用枠</p>
 <h3 id="src%2Fgas%2Fget_channels.ts"><a class="header-anchor-link" href="#src%2Fgas%2Fget_channels.ts" aria-hidden="true"></a> <a href="https://github.com/igara/bot_slack_matome_channnel/blob/master/src/gas/get_channels.ts" target="_blank" rel="nofollow noopener noreferrer">src/gas/get_channels.ts</a></h3>
@@ -168,8 +162,7 @@ ChannelsSheet<span class="token punctuation">.</span><span class="token function
 Slack APIを叩いてすべてのチャンネルを取得する<br>
 スクリプトエディターで定期実行するトリガーを設定できるのでこの関数を時間実行できると良いかも</p>
 <p>トリガーの設定もコード化したい場合は下記のコードを参考にすればいけるんですかね？（試してない<br style="display: none">
-<div class="embed-zenn-link"><iframe src="https://raw.githubusercontent.com/igara/zenn-export
-/mainhttps://card.zenn.dev/?url=https%3A%2F%2Fdevelopers.google.com%2Fapps-script%2Fguides%2Ftriggers%2Finstallable%23managing_triggers_programmatically" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://developers.google.com/apps-script/guides/triggers/installable#managing_triggers_programmatically" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://developers.google.com/apps-script/guides/triggers/installable#managing_triggers_programmatically</a></p>
+<div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fdevelopers.google.com%2Fapps-script%2Fguides%2Ftriggers%2Finstallable%23managing_triggers_programmatically" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://developers.google.com/apps-script/guides/triggers/installable#managing_triggers_programmatically" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://developers.google.com/apps-script/guides/triggers/installable#managing_triggers_programmatically</a></p>
 <h3 id="src%2Fgas%2Fget_users.ts"><a class="header-anchor-link" href="#src%2Fgas%2Fget_users.ts" aria-hidden="true"></a> <a href="https://github.com/igara/bot_slack_matome_channnel/blob/master/src/gas/get_users.ts" target="_blank" rel="nofollow noopener noreferrer">src/gas/get_users.ts</a></h3>
 <p>GASとして使用する関数<br>
 Slack APIを叩いてすべてのユーザを取得する</p>
