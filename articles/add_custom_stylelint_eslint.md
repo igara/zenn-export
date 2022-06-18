@@ -22,7 +22,7 @@ Lintのコードの内容や開発をどのように進めているのかなど�
 
 ```sass
 .hoge {
-  color: $colorWhite
+  color: $colorWhite;
 }
 ```
 
@@ -31,7 +31,7 @@ import { css } from '@emotion/react';
 import { Color } from '@design_system';
 
 const hogeCSS = css`
-  color: ${Color.White}
+  color: ${Color.White};
 `;
 ```
 
