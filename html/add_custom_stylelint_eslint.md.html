@@ -1,0 +1,711 @@
+
+<style>
+.znc{line-height:1.9}.znc>*:first-child{margin-top:0}.znc i,.znc cite,.znc em{font-style:italic}.znc strong{font-weight:700}.znc a{color:#0f83fd}.znc a:hover{text-decoration:underline}.znc p+p{margin-top:1.5em}.znc ul,.znc ol{margin:1.4rem 0;line-height:1.7}.znc ul>li,.znc ol>li{margin:.4rem 0}.znc ul ul,.znc ul ol,.znc ol ul,.znc ol ol{margin:.2em 0}.znc ul p,.znc ol p{margin:0}.znc ul{padding-left:1.8em}.znc ul>li{list-style:disc}.znc ul>li::marker{font-size:1.1em;color:#5e6478}.znc ol{padding-left:1.7em}.znc ol>li{list-style:decimal;padding-left:.2em}.znc ol>li::marker{color:#535872;font-weight:600;letter-spacing:-0.05em}.znc .contains-task-list li{list-style:none !important}.znc .task-list-item-checkbox{margin-left:-1.5em;font-size:1em;pointer-events:none}.znc h1+p,.znc h2+p,.znc h3+p,.znc h4+p,.znc h5+p,.znc h6+p{margin-top:.3em}.znc h1,.znc h2{margin-top:2.3em;margin-bottom:.5em}.znc h3,.znc h4,.znc h5,.znc h6{margin-top:2.25em;margin-bottom:.5em}.znc h1{padding-bottom:.2em;margin-bottom:1.1rem;font-size:1.7em;position:relative;border-bottom:solid 1px rgba(92,147,187,.17)}.znc h2{font-size:1.5em}.znc h3{font-size:1.3em}.znc h4{font-size:1.1em}.znc h5{font-size:1em}.znc h6{font-size:.9em}@media screen and (max-width: 576px){.znc h1{font-size:1.6em}.znc h2{font-size:1.4em}.znc h3{font-size:1.2em}.znc h4{font-size:1.1em}.znc h5{font-size:1em}.znc h6{font-size:.85em}}.znc hr{border-top:2px solid rgba(92,147,187,.17);margin:2.5rem 0}.znc blockquote{font-size:.97em;margin:1.4rem 0;border-left:solid 3px #9dacb7;padding:2px 0 2px .7em;color:#505c64}.znc blockquote p{margin:1rem 0}.znc blockquote>:first-child{margin-top:0}.znc blockquote>:last-child{margin-bottom:0}.znc blockquote.twitter-tweet{display:none}.znc table{margin:1.2rem auto;width:auto;border-collapse:collapse;font-size:.95em;line-height:1.5;word-break:normal;display:block;overflow:auto;-webkit-overflow-scrolling:touch}.znc th,.znc td{padding:.5rem;border:solid 1px #cfdce6;background:#fff}.znc th{font-weight:700;background:#edf2f7}.znc code{padding:.2em .4em;background:rgba(33,90,160,.07);font-size:.85em;border-radius:4px;vertical-align:.08em}.znc code,.znc .code-block-filename{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";-webkit-font-smoothing:antialiased}.znc pre{margin:1.3rem 0;background:#1a2638;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:.7em;box-shadow:0 4px 6px -1px rgba(0,14,30,.15);word-break:normal;word-wrap:normal;display:flex}.znc pre:after{content:"";width:8px;flex-shrink:0}.znc pre code{margin:0;padding:0;background:transparent;font-size:.9em;color:#fff}.znc pre>code{display:block;padding:1.1rem}@media screen and (max-width: 576px){.znc pre>code{padding:1rem .8rem;font-size:.85em}}.znc .code-block-container{position:relative;margin:1.3rem 0}.znc .code-block-container pre{margin:0}.znc .code-block-filename{display:table;max-width:100%;background:#323e52;color:rgba(255,255,255,.9);font-size:12px;line-height:1.3;border-radius:6px 6px 0 0;padding:6px 12px 20px;margin-bottom:-16px}.znc .code-block-filename-container+pre{border-top-left-radius:0}.znc img:not(.emoji){margin:1.5rem auto;display:table;max-width:100%;height:auto}.znc img+br{display:none}.znc img~em{display:block;margin:-1rem auto 0;line-height:1.3;text-align:center;color:#77838c;font-size:.92em}.znc details{font-size:.95em;margin:1rem 0;line-height:1.7}.znc summary{cursor:pointer;outline:0;padding:.7em .7em .7em .9em;border:solid 1px rgba(92,147,187,.19);color:var(--c-contrast);font-size:.9em;border-radius:9px;box-shadow:0 2px 4px -2px rgba(0,0,0,.15)}.znc summary::-webkit-details-marker{color:#77838c}.znc details[open] summary{border-radius:5px 5px 0 0;box-shadow:none;background:#f1f5f9;border-bottom:none}.znc .details-content{padding:.5em .9em;border:solid 1px rgba(92,147,187,.2);border-radius:0 0 5px 5px}.znc .details-content>*{margin:.5em 0}.znc .embed-tweet,.znc .embed-gist,.znc .embed-speakerdeck,.znc .embed-slideshare,.znc .embed-codepen,.znc .embed-jsfiddle,.znc .embed-youtube,.znc .embed-codesandbox,.znc .embed-stackblitz,.znc .embed-mermaid{margin:1.5rem 0}.znc .embed-slideshare,.znc .embed-speakerdeck,.znc .embed-codepen,.znc .embed-jsfiddle,.znc .embed-youtube,.znc .embed-stackblitz{padding-bottom:calc(56.25% + 38px);position:relative;width:100%;height:0}.znc .embed-slideshare iframe,.znc .embed-speakerdeck iframe,.znc .embed-codepen iframe,.znc .embed-jsfiddle iframe,.znc .embed-youtube iframe,.znc .embed-stackblitz iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}.znc .embed-slideshare iframe{border:1px solid #1a2638}.znc .embed-zenn-link{margin:1rem auto}.znc .embed-zenn-link iframe{height:125px;width:100%;display:block}.znc embed-katex:not([display-mode="1"]){display:inline-flex;overflow-x:auto;max-width:100%;-ms-overflow-style:none;scrollbar-width:none}.znc embed-katex:not([display-mode="1"])::-webkit-scrollbar{display:none}.znc embed-katex[display-mode="1"]{display:block;width:100%;overflow-x:auto}.znc embed-mermaid svg{height:auto}.znc pre.zenn-mermaid{background:transparent;color:#93a5b1;font-size:.9rem}.znc pre[class*=language-]{position:relative}.znc .token.namespace{opacity:.7}.znc .token.comment,.znc .token.prolog,.znc .token.doctype,.znc .token.cdata{color:#94a1b3}.znc .token.operator,.znc .token.boolean,.znc .token.number{color:#ffc56d}.znc .token.attr-name,.znc .token.string{color:#ffc56d}.znc .token.entity,.znc .token.url,.znc .language-css .token.string,.znc .style .token.string{color:#ffc56d}.znc .token.selector{color:#ff8fa3}.znc .token.atrule,.znc .token.attr-value,.znc .token.keyword,.znc .token.important{color:#ff8fa3}.znc .token.deleted{color:#ff8fa3}.znc .token.inserted{color:#b4ff9b}.znc .token.deleted:not(.prefix){background:rgba(218,54,50,.2);color:inherit;display:block}.znc .token.prefix{user-select:none}.znc .token.inserted:not(.prefix){background:rgba(0,146,27,.2);color:inherit;display:block}.znc .token.prefix.unchanged{display:none}.znc .token.unchanged>.token.prefix.unchanged{display:inline}.znc .token.coord{color:#aad4ff}.znc .token.regex,.znc .token.statement{color:#ffc56d}.znc .token.placeholder,.znc .token.variable{color:#fff}.znc .token.important,.znc .token.statement,.znc .token.bold{font-weight:700}.znc .token.punctuation{color:#939bc1}.znc .token.entity{cursor:help}.znc .token.italic{font-style:italic}.znc .token.tag,.znc .token.property,.znc .token.function{color:#38c7ff}.znc .token.attr-name{color:#ff8fa3}.znc .token.attr-value{color:#ffc56d}.znc .token.style,.znc .token.script{color:#ffc56d}.znc .token.script .token.keyword{color:#ffc56d}.znc aside.msg{display:flex;align-items:flex-start;margin:1.5rem 0;padding:1.4em 1em;border-radius:10px;background:#fff6e4;color:rgba(0,0,0,.65);font-size:.94em;line-height:1.6}.znc aside.msg.alert{background:#ffeff2}.znc aside.msg a{color:inherit;text-decoration:underline}.znc .msg-icon{position:relative;top:.05em;width:1.4em;height:1.4em;color:#ffb84c}.znc aside.msg.alert .msg-icon{color:#ff7670}.znc .msg-content{flex:1;margin-left:.6em}.znc .msg-content>*{margin:.7rem 0}.znc .msg-content>*:first-child,.znc .msg-content>*:last-child{margin:0}.znc .footnotes{margin-top:3rem;color:#77838c;font-size:.9em}.znc .footnotes li::marker{color:#77838c}.znc .footnotes-title{padding-bottom:3px;border-bottom:solid 1px #cfdce6;font-weight:700;font-size:15px}.znc .footnotes-list{margin:13px 0 0}.znc .footnotes-twemoji{border:none;margin:0 7px 0 0;vertical-align:-3px}
+
+svg {
+  width: 20px;
+}
+</style>
+<div class="znc">
+  <hr>
+<h2 id="title%3A-%22eslint%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E6%96%B0%E8%A6%8F%E8%BF%BD%E5%8A%A0%E3%80%81stylelint%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-%E8%A3%9C%E8%B6%B3%22emoji%3A-%22%E2%9C%85%22type%3A-%22tech%22-%23-tech%3A-%E6%8A%80%E8%A1%93%E8%A8%98%E4%BA%8B-%2F-idea%3A-%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2topics%3A-%5B%22sass%22%2C-%22stylelint%22%2C-%22eslint%22%2C-%22emotion%22%2C-%22lancers%22%5Dpublished%3A-true"><a class="header-anchor-link" href="#title%3A-%22eslint%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E6%96%B0%E8%A6%8F%E8%BF%BD%E5%8A%A0%E3%80%81stylelint%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-%E8%A3%9C%E8%B6%B3%22emoji%3A-%22%E2%9C%85%22type%3A-%22tech%22-%23-tech%3A-%E6%8A%80%E8%A1%93%E8%A8%98%E4%BA%8B-%2F-idea%3A-%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2topics%3A-%5B%22sass%22%2C-%22stylelint%22%2C-%22eslint%22%2C-%22emotion%22%2C-%22lancers%22%5Dpublished%3A-true" aria-hidden="true"></a> title: &quot;ESLintのルール新規追加、Stylelintのルール追加しました 補足&quot;<br>
+emoji: &quot;✅&quot;<br>
+type: &quot;tech&quot; # tech: 技術記事 / idea: アイデア<br>
+topics: [&quot;sass&quot;, &quot;stylelint&quot;, &quot;eslint&quot;, &quot;emotion&quot;, &quot;lancers&quot;]<br>
+published: true</h2>
+<p><div class="embed-zenn-link"><iframe src="https://card.zenn.dev/?url=https%3A%2F%2Fengineer.blog.lancers.jp%2F%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2588%25E3%2582%25A8%25E3%2583%25B3%25E3%2583%2589%2F%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2588%25E3%2582%25A8%25E3%2583%25B3%25E3%2583%2589%25E5%25AE%259A%25E4%25BE%258B-2022-6-17" frameborder="0" scrolling="no" loading="lazy"></iframe></div><a href="https://engineer.blog.lancers.jp/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89%E5%AE%9A%E4%BE%8B-2022-6-17" style="display: none" target="_blank" rel="nofollow noopener noreferrer">https://engineer.blog.lancers.jp/フロントエンド/フロントエンド定例-2022-6-17</a></p>
+<p>の「ESLintのルール新規追加、Stylelintのルール追加しました」の記事に対しての補足記事になります。</p>
+<p>最初に記事の足りない箇所の補足をした上で、<br>
+Lintのコードの内容や開発をどのように進めているのかなども記載したいと思います。</p>
+<h2 id="%E8%A8%98%E4%BA%8B%E3%81%AE%E8%A3%9C%E8%B6%B3"><a class="header-anchor-link" href="#%E8%A8%98%E4%BA%8B%E3%81%AE%E8%A3%9C%E8%B6%B3" aria-hidden="true"></a> 記事の補足</h2>
+<h3 id="%3E-stylelint%E3%81%A8%E3%81%AF%E5%88%A5%E3%81%A7eslint%E3%81%A7%E3%82%82%E4%BD%9C%E6%88%90%E3%81%97%E3%82%88%E3%81%86%E3%81%A8%E3%81%97%E3%81%9F%E7%90%86%E7%94%B1%E3%81%A8%E3%81%97%E3%81%A6css-in-js%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E9%81%A9%E5%BF%9C%E6%96%B9%E6%B3%95%E3%81%8Ccss%2C-sass%E3%81%A8%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81eslint%E3%81%A7%E3%82%82%E5%90%8C%E6%A7%98%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%82%92%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82"><a class="header-anchor-link" href="#%3E-stylelint%E3%81%A8%E3%81%AF%E5%88%A5%E3%81%A7eslint%E3%81%A7%E3%82%82%E4%BD%9C%E6%88%90%E3%81%97%E3%82%88%E3%81%86%E3%81%A8%E3%81%97%E3%81%9F%E7%90%86%E7%94%B1%E3%81%A8%E3%81%97%E3%81%A6css-in-js%E3%81%AB%E3%82%88%E3%82%8B%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E9%81%A9%E5%BF%9C%E6%96%B9%E6%B3%95%E3%81%8Ccss%2C-sass%E3%81%A8%E3%81%AF%E7%95%B0%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81eslint%E3%81%A7%E3%82%82%E5%90%8C%E6%A7%98%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%82%92%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82" aria-hidden="true"></a> &gt; Stylelintとは別でESLintでも作成しようとした理由としてCSS in JSによるスタイルの適応方法がCSS, SASSとは異なるためESLintでも同様のルールの追加をしています。</h3>
+<p>実際のSassとTypeScriptによるReactでのCSS in JSでの変数適応の例を見ると</p>
+<div class="code-block-container"><pre class="language-sass"><code class="language-sass"><span class="token selector">.hoge {</span>
+<span class="token property-line">  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$colorWhite</span>;</span>
+<span class="token selector">}</span>
+</code></pre></div><div class="code-block-container"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> css <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@emotion/react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Color <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@design_system'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> hogeCSS <span class="token operator">=</span> css<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  color: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>Color<span class="token punctuation">.</span>White<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">;
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+</code></pre></div><p>上記のようにSassでは <code>$xxx</code>、TypeScriptでは <code>${xxx}</code> と構文上の違いがあり、<br>
+StylelintではSassをESLint側はCSS in JSをメインにしてルールを記載しようとなった背景があります。</p>
+<p>前回はSassに対してのStylelintの適応の話しかしてなかったのでTypeScript側ではどういった色の管理しているのか触れてなかったのですが、<br>
+基本はSassの値を参照で間にWebpackとcss-loaser経由での<a href="https://github.com/css-modules/icss#import" target="_blank" rel="nofollow noopener noreferrer">CSS Modulesの:import</a>によるSassの変数をTypeScriptでも使えるようなやり方で現状は適応してたりします。</p>
+<h3 id="%3E-figma%E3%81%A8%E3%81%8B%E3%81%AB%E5%AE%9A%E7%BE%A9%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8Bpx%E3%82%84%E8%89%B2%E3%81%AE%E7%89%A9%E7%90%86%E7%9A%84%E3%81%AA%E5%80%A4"><a class="header-anchor-link" href="#%3E-figma%E3%81%A8%E3%81%8B%E3%81%AB%E5%AE%9A%E7%BE%A9%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8Bpx%E3%82%84%E8%89%B2%E3%81%AE%E7%89%A9%E7%90%86%E7%9A%84%E3%81%AA%E5%80%A4" aria-hidden="true"></a> &gt; Figmaとかに定義されているpxや色の物理的な値</h3>
+<p>Figma上で親パーツとの間隔を調べるときにAlt (Option)を押しながらマウスカーソルを当てて表示されている数値をそのまま貼ればVSCodeで補完の候補が出てくるので都度定義ファイルを開いて適切な変数名を調べる必要がなくなりました。</p>
+<p><img src="https://raw.githubusercontent.com/igara/zenn-export
+/main/images/add_custom_stylelint_eslint/figma_padding.jpg" alt=""></p>
+<p>色についてもFigma上に表示されている値をクリックしてコピれるのでそのまま貼り付けしてあとは補完に任せれば良い環境になっています。</p>
+<p><img src="https://raw.githubusercontent.com/igara/zenn-export
+/main/images/add_custom_stylelint_eslint/figma_color.jpg" alt=""></p>
+<h3 id="%3E-%E4%BB%96%E3%81%AE%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%A7%E3%82%82%E9%9D%99%E7%9A%84%E8%A7%A3%E6%9E%90%E5%90%AB%E3%82%81%E3%81%A6%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%81%8F%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%84%E3%81%8D%E3%81%9F%E3%81%84"><a class="header-anchor-link" href="#%3E-%E4%BB%96%E3%81%AE%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%A7%E3%82%82%E9%9D%99%E7%9A%84%E8%A7%A3%E6%9E%90%E5%90%AB%E3%82%81%E3%81%A6%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%81%8F%E3%82%88%E3%81%86%E3%81%AB%E3%81%97%E3%81%A6%E3%81%84%E3%81%8D%E3%81%9F%E3%81%84" aria-hidden="true"></a> &gt; 他のプロジェクトでも静的解析含めてデザインシステムライブラリを使っていくようにしていきたい</h3>
+<p>直近、自分が関わっているプロジェクト以外では適応がまだできていないので時間あるときに適応したいですね。<br>
+自分が適応するのではなく、ビルドに影響しないLintの設定なのでPRで他のプロジェクトにも適応しましたというのがあったら結構嬉しかったりします。</p>
+<p>個人的問題ですが拡散したものの布教されるまでにどうしても時間がかかってしまうのが個人的な悩みだったりしますね。<br>
+（職務範囲の問題とかもあるのでそこまで踏み込んでもよいのだろうかというのはたまに思うところ）<br>
+誰がやるやら問題ともいってます。</p>
+<h2 id="%E3%82%B3%E3%83%BC%E3%83%89%E8%AA%AC%E6%98%8E"><a class="header-anchor-link" href="#%E3%82%B3%E3%83%BC%E3%83%89%E8%AA%AC%E6%98%8E" aria-hidden="true"></a> コード説明</h2>
+<h3 id="stylelint"><a class="header-anchor-link" href="#stylelint" aria-hidden="true"></a> Stylelint</h3>
+<p>プロジェクトの構成はほぼこれ<br>
+<a href="https://zenn.dev/jj/scraps/42157938c9eb48" target="_blank">stylelint-pluginを作ってみる会</a></p>
+<h4 id="%E5%AE%9F%E8%A3%85%E3%82%B3%E3%83%BC%E3%83%89"><a class="header-anchor-link" href="#%E5%AE%9F%E8%A3%85%E3%82%B3%E3%83%BC%E3%83%89" aria-hidden="true"></a> 実装コード</h4>
+<p>ルールを記載している index.js の内容として下記になります。<br>
+コードのコメント上で説明します</p>
+<div class="code-block-container"><div class="code-block-filename-container"><span class="code-block-filename">index.js</span></div><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> stylelint <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'stylelint'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> colorsJSON <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@lancers/design_guideline/scripts/colors.json'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> spacingJSON <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@lancers/design_guideline/scripts/spacing.json'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> ruleName <span class="token operator">=</span> <span class="token string">'@lancers/design-guideline'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> messages <span class="token operator">=</span> stylelint<span class="token punctuation">.</span>utils<span class="token punctuation">.</span><span class="token function">ruleMessages</span><span class="token punctuation">(</span>ruleName<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">expected</span><span class="token operator">:</span> <span class="token string">'Expected...'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 現状はpadding, padding-[top,...],margin,margin-[top,...],grid-gap,gapなどの間隔を対象にしている
+ */</span>
+<span class="token keyword">const</span> spacingPropReg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(\S*padding\S*|\S*margin\S*|\S*gap\S*)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * #のカラーコード以外に$などの変数も対象にしている
+ * colors.jsonには変数名-カラーコードの情報も保存しているので
+ * 適当なSass変数による色適応を許可しないようにした
+ */</span>
+<span class="token keyword">const</span> colorReg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(#|\$)[0-9a-zA-Z]*</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * px以外に$などの変数も対象にしている
+ * spacing.jsonも同様に変数名-pxの情報も保存しているので
+ * 適当なSass変数によるpx適応を許可しないようにした
+ */</span>
+<span class="token keyword">const</span> spacingReg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">([0-9]*px|\$[0-9a-zA-Z]*)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">checkColors</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> decl<span class="token punctuation">,</span> result <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// CSSでいうpaddingなどのstyle属性をpropで扱っている</span>
+  <span class="token keyword">const</span> prop <span class="token operator">=</span> decl<span class="token punctuation">.</span>prop<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>spacingPropReg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>prop<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 上記の条件はスキップ</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// decl.valueはstyle属性に対しての指定された値を扱っている</span>
+  <span class="token keyword">const</span> matched <span class="token operator">=</span> decl<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>colorReg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>matched<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// カラーコード・変数名のマッチがあるか</span>
+  <span class="token keyword">const</span> color <span class="token operator">=</span> colorsJSON<span class="token punctuation">[</span>matched<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">||</span> colorsJSON<span class="token punctuation">[</span>matched<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>color<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// マッチがない場合は未定義のものとして注意する</span>
+    stylelint<span class="token punctuation">.</span>utils<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      ruleName<span class="token punctuation">,</span>
+      result<span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">undefined color rule: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>matched<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> -> ??? [see colors.scss]</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">node</span><span class="token operator">:</span> decl<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// color.sassはJSONにあるSass用の変数を示している</span>
+  <span class="token keyword">const</span> definedColor <span class="token operator">=</span> color<span class="token punctuation">.</span>sass<span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>definedColor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// マッチした場合は変数名を提案する</span>
+    stylelint<span class="token punctuation">.</span>utils<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      ruleName<span class="token punctuation">,</span>
+      result<span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>messages<span class="token punctuation">.</span>expected<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>matched<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> -> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>definedColor<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> [see colors.scss]</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">node</span><span class="token operator">:</span> decl<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">checkSpacing</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> decl<span class="token punctuation">,</span> result <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token comment">// CSSでいうpaddingなどのstyle属性をpropで扱っている</span>
+  <span class="token keyword">const</span> prop <span class="token operator">=</span> decl<span class="token punctuation">.</span>prop<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>spacingPropReg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>prop<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 上記の条件以外はスキップ</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// decl.valueはstyle属性に対しての指定された値を扱っている</span>
+  <span class="token keyword">const</span> matched <span class="token operator">=</span> decl<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>spacingReg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>matched<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// px・変数名のマッチがあるか</span>
+  <span class="token keyword">const</span> spacing <span class="token operator">=</span> spacingJSON<span class="token punctuation">[</span>matched<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>spacing<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// マッチがない場合は未定義のものとして注意する</span>
+    stylelint<span class="token punctuation">.</span>utils<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      ruleName<span class="token punctuation">,</span>
+      result<span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">undefined spacing rule: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>matched<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> -> ??? [see spacing.scss]</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">node</span><span class="token operator">:</span> decl<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// spacing.sassはJSONにあるSass用の変数を示している</span>
+  <span class="token keyword">const</span> definedSpacing <span class="token operator">=</span> spacing<span class="token punctuation">.</span>sass<span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>definedSpacing<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// マッチした場合は変数名を提案する</span>
+    stylelint<span class="token punctuation">.</span>utils<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      ruleName<span class="token punctuation">,</span>
+      result<span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>messages<span class="token punctuation">.</span>expected<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>matched<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> -> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>definedSpacing<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> [see spacing.scss]</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">node</span><span class="token operator">:</span> decl<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> stylelint<span class="token punctuation">.</span><span class="token function">createPlugin</span><span class="token punctuation">(</span>ruleName<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">root<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> validOptions <span class="token operator">=</span> stylelint<span class="token punctuation">.</span>utils<span class="token punctuation">.</span><span class="token function">validateOptions</span><span class="token punctuation">(</span>result<span class="token punctuation">,</span> ruleName<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    root<span class="token punctuation">.</span><span class="token function">walkDecls</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">decl</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token comment">/**
+       * 現状1つのStylelintのプラグインで色、間隔のルールチェックをしているので分けるべきなんだろうけど
+       * 複数のルールとしてStylelintのプロジェクト分けるのにもためらっている
+       */</span>
+      <span class="token function">checkColors</span><span class="token punctuation">(</span><span class="token punctuation">{</span> decl<span class="token punctuation">,</span> result <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">checkSpacing</span><span class="token punctuation">(</span><span class="token punctuation">{</span> decl<span class="token punctuation">,</span> result <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>validOptions<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span>ruleName <span class="token operator">=</span> ruleName<span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports<span class="token punctuation">.</span>messages <span class="token operator">=</span> messages<span class="token punctuation">;</span>
+</code></pre></div><h4 id="%E3%83%86%E3%82%B9%E3%83%88%E3%82%B3%E3%83%BC%E3%83%89"><a class="header-anchor-link" href="#%E3%83%86%E3%82%B9%E3%83%88%E3%82%B3%E3%83%BC%E3%83%89" aria-hidden="true"></a> テストコード</h4>
+<p>検証として実施済みのテストコードとして下記のものになります。</p>
+<div class="code-block-container"><div class="code-block-filename-container"><span class="code-block-filename">index.test.js</span></div><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token punctuation">{</span> ruleName <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">testRule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'./index.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  ruleName<span class="token punctuation">,</span>
+  <span class="token literal-property property">config</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">fix</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+  <span class="token literal-property property">accept</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        margin: 0;
+        color: $colorWhite;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  <span class="token literal-property property">reject</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        margin: 0;
+        color: #fff;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span>
+        <span class="token string">'Expected... (@lancers/design-guideline) #fff -> $colorWhite [see colors.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        margin: 0;
+        color: #FFF;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span>
+        <span class="token string">'Expected... (@lancers/design-guideline) #FFF -> $colorWhite [see colors.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        margin: 0;
+        color: #123456;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'undefined color rule: #123456 -> ??? [see colors.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        margin: 0;
+        color: $hoge;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'undefined color rule: $hoge -> ??? [see colors.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        padding: 99px;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'undefined spacing rule: 99px -> ??? [see spacing.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        padding: $hoge;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'undefined spacing rule: $hoge -> ??? [see spacing.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        padding: 64px;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span>
+        <span class="token string">'Expected... (@lancers/design-guideline) 64px -> $spacingXXXL [see spacing.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        padding-top: 64px;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span>
+        <span class="token string">'Expected... (@lancers/design-guideline) 64px -> $spacingXXXL [see spacing.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        margin-bottom: 64px;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span>
+        <span class="token string">'Expected... (@lancers/design-guideline) 64px -> $spacingXXXL [see spacing.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        raw-gap: 64px;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span>
+        <span class="token string">'Expected... (@lancers/design-guideline) 64px -> $spacingXXXL [see spacing.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        gap: 64px;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span>
+        <span class="token string">'Expected... (@lancers/design-guideline) 64px -> $spacingXXXL [see spacing.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        grid-gap: 64px;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">message</span><span class="token operator">:</span>
+        <span class="token string">'Expected... (@lancers/design-guideline) 64px -> $spacingXXXL [see spacing.scss]'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">.class {
+        margin: 0;
+        border: 1px dashed #fff;
+      }</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token literal-property property">warnings</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">column</span><span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">endColumn</span><span class="token operator">:</span> <span class="token number">33</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">endLine</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">line</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">rule</span><span class="token operator">:</span> <span class="token string">'@lancers/design-guideline'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">severity</span><span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">message</span><span class="token operator">:</span>
+            <span class="token string">'Expected... (@lancers/design-guideline) #fff -> $colorWhite [see colors.scss]'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>テスト実行はVSCodeのデバック実行機能から実行するように下記のlaunch.jsonを保存させてテストしやすい感じで実施してました。</p>
+<div class="code-block-container"><div class="code-block-filename-container"><span class="code-block-filename">launch.json</span></div><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"0.2.0"</span><span class="token punctuation">,</span>
+  <span class="token property">"configurations"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"stylelint:design-guideline"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"node"</span><span class="token punctuation">,</span>
+      <span class="token property">"request"</span><span class="token operator">:</span> <span class="token string">"launch"</span><span class="token punctuation">,</span>
+      <span class="token property">"cwd"</span><span class="token operator">:</span> <span class="token string">"${workspaceFolder}/lint/stylelint-plugin-design-guideline"</span><span class="token punctuation">,</span>
+      <span class="token property">"runtimeArgs"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"--inspect-brk"</span><span class="token punctuation">,</span>
+        <span class="token string">"${workspaceRoot}/lint/stylelint-plugin-design-guideline/node_modules/.bin/jest"</span><span class="token punctuation">,</span>
+        <span class="token string">"--runInBand"</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"console"</span><span class="token operator">:</span> <span class="token string">"integratedTerminal"</span><span class="token punctuation">,</span>
+      <span class="token property">"internalConsoleOptions"</span><span class="token operator">:</span> <span class="token string">"neverOpen"</span><span class="token punctuation">,</span>
+      <span class="token property">"port"</span><span class="token operator">:</span> <span class="token number">9229</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="eslint"><a class="header-anchor-link" href="#eslint" aria-hidden="true"></a> ESLint</h3>
+<p>プロジェクト構成はこの方の記事がものすごく近いです</p>
+<p>書いて覚える ESLint ルールの作り方</p>
+<p><a href="https://qiita.com/kik4/items/a6d0dc2f8ab5ce50f97d" target="_blank" rel="nofollow noopener noreferrer">TypeScript版</a><br>
+<a href="https://qiita.com/kik4/items/ef30d5e0e24dabb81463" target="_blank" rel="nofollow noopener noreferrer">JavaScript版</a></p>
+<p>若干の違いが自分の方はテストライブラリをJestを採用しているぐらいの差分だと思います。</p>
+<h4 id="%E5%AE%9F%E8%A3%85%E3%82%B3%E3%83%BC%E3%83%89-1"><a class="header-anchor-link" href="#%E5%AE%9F%E8%A3%85%E3%82%B3%E3%83%BC%E3%83%89-1" aria-hidden="true"></a> 実装コード</h4>
+<p>追加したルールのコードのコメント上で説明します。</p>
+<div class="code-block-container"><div class="code-block-filename-container"><span class="code-block-filename">src/index.ts</span></div><pre class="language-typescript"><code class="language-typescript"><span class="token comment">/**
+ * このファイルをバレルのように扱っている
+ * ルールを追加した際はこちらにもimportを記載する
+ */</span>
+<span class="token keyword">import</span> emotionColors <span class="token keyword">from</span> <span class="token string">'./rules/emotionColors'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> emotionSpacing <span class="token keyword">from</span> <span class="token string">'./rules/emotionSpacing'</span><span class="token punctuation">;</span>
+
+exports<span class="token punctuation">.</span>default <span class="token operator">=</span> <span class="token punctuation">{</span>
+  rules<span class="token operator">:</span> <span class="token punctuation">{</span>
+    emotionColors<span class="token punctuation">,</span>
+    emotionSpacing<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  configs<span class="token operator">:</span> <span class="token punctuation">{</span>
+    all<span class="token operator">:</span> <span class="token punctuation">{</span>
+      plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'design-guideline'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      rules<span class="token operator">:</span> <span class="token punctuation">{</span>
+        emotionColors<span class="token operator">:</span> <span class="token string">'error'</span><span class="token punctuation">,</span>
+        emotionSpacing<span class="token operator">:</span> <span class="token string">'warn'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="code-block-container"><div class="code-block-filename-container"><span class="code-block-filename">src/rules/util.ts</span></div><pre class="language-typescript"><code class="language-typescript"><span class="token comment">/**
+ * 共通の変数まとめた
+ */</span>
+
+<span class="token comment">/**
+ * css``やstyled.div``などの書き方を対象にしている
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> cssInJSReg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(css|styled.[a-zA-Z]*)`</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * カラーコード以外に${xxx}という変数の書き方も対象にしている
+ * 若干正規表現が怪しいがライブラリ経由のカラーコード呼び出しは
+ * ${Color.xxx}な形式だから現状カバーできているがより厳密に書いたほうがよさそう
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> colorReg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(#[0-9a-zA-Z]*|\${[0-9a-zA-Z]*})</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * Stylelint側と同様の間隔の対象にしている
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> spacingPropReg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(\S*padding\S*|\S*margin\S*|\S*gap\S*): .*?;</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * px以外に${xxx}という変数の書き方も対象にしている
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> spacingReg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">([0-9]*px|\${[0-9a-zA-Z]*})</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+
+</code></pre></div><div class="code-block-container"><div class="code-block-filename-container"><span class="code-block-filename">src/rules/emotionColors.ts</span></div><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Rule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'eslint'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> colorReg<span class="token punctuation">,</span> cssInJSReg <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./util'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> colorsJSON <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'@lancers/design_guideline/scripts/colors.json'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> emotionColors <span class="token operator">=</span> <span class="token punctuation">{</span>
+  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token string">'suggestion'</span><span class="token punctuation">,</span>
+    docs<span class="token operator">:</span> <span class="token punctuation">{</span>
+      description<span class="token operator">:</span> <span class="token string">'@lancers/design_guideline共通の使用する色指定ルール'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    fixable<span class="token operator">:</span> <span class="token string">'code'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">create</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token comment">/**
+       * const, varなどの変数を定義した箇所に対してのルールを追加する
+       * nodeの対象は変数定義の箇所
+       */</span>
+      <span class="token function">VariableDeclaration</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">/**
+         * context.getSourceCode ファイルの全体のソースを扱っている
+         */</span>
+        <span class="token keyword">const</span> code <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">getSourceCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>code<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>cssInJSReg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// emotionなどのStyle指定ではない場合はスキップ</span>
+          <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">const</span> matched <span class="token operator">=</span> code<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>colorReg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>matched<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">const</span> matcheString <span class="token operator">=</span> matched<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> color <span class="token operator">=</span>
+          colorsJSON<span class="token punctuation">[</span>matcheString<span class="token punctuation">]</span> <span class="token operator">||</span> colorsJSON<span class="token punctuation">[</span>matcheString<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>color<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// マッチがない場合は未定義のものとして注意する</span>
+          context<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            node<span class="token punctuation">,</span>
+            message<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">undefined color rule: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>matcheString<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> -> ??? [see utils/Color/index.ts(colors.scss)]</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">const</span> definedColor <span class="token operator">=</span> color<span class="token punctuation">.</span>script<span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>definedColor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// マッチした場合は候補を提案する</span>
+          context<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            node<span class="token punctuation">,</span>
+            message<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>matcheString<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> -> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>definedColor<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> [see utils/Color/index.ts(colors.scss)]</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+            <span class="token comment">/**
+             * eslint --fix実行時に対象の箇所を自動で修正するための関数
+             */</span>
+            <span class="token function">fix</span><span class="token punctuation">(</span>fixer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">const</span> scope <span class="token operator">=</span> node<span class="token punctuation">.</span>parent<span class="token punctuation">;</span>
+
+              <span class="token keyword">const</span> sourceCode <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">getSourceCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span>scope<span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token comment">// 文字列置換</span>
+              <span class="token keyword">const</span> fixedCode <span class="token operator">=</span> sourceCode<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>matcheString<span class="token punctuation">,</span> definedColor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+              <span class="token comment">// 実際のソースコード上にも文字列置換を反映する</span>
+              <span class="token keyword">return</span> fixer<span class="token punctuation">.</span><span class="token function">replaceText</span><span class="token punctuation">(</span>scope<span class="token punctuation">,</span> fixedCode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span> <span class="token keyword">as</span> Rule<span class="token punctuation">.</span>RuleModule<span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> emotionColors<span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> emotionColors<span class="token punctuation">;</span>
+</code></pre></div><div class="code-block-container"><div class="code-block-filename-container"><span class="code-block-filename">src/rules/emotionSpacing.ts</span></div><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Rule <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'eslint'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> spacingPropReg<span class="token punctuation">,</span> spacingReg <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./util'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> spacingJSON <span class="token operator">=</span> <span class="token keyword">require</span><span class="token punctuation">(</span><span class="token string">'@lancers/design_guideline/scripts/spacing.json'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> emotionSpacing <span class="token operator">=</span> <span class="token punctuation">{</span>
+  meta<span class="token operator">:</span> <span class="token punctuation">{</span>
+    type<span class="token operator">:</span> <span class="token string">'suggestion'</span><span class="token punctuation">,</span>
+    docs<span class="token operator">:</span> <span class="token punctuation">{</span>
+      description<span class="token operator">:</span> <span class="token string">'@lancers/design_guideline共通の間隔のpx指定ルール'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    fixable<span class="token operator">:</span> <span class="token string">'code'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">create</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token comment">/**
+       * const, varなどの変数を定義した箇所に対してのルールを追加する
+       * nodeの対象は変数定義の箇所
+       */</span>
+      <span class="token function">VariableDeclaration</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">/**
+         * context.getSourceCode ファイルの全体のソースを扱っている
+         */</span>
+        <span class="token keyword">const</span> code <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">getSourceCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>code<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> propMatch <span class="token operator">=</span> code<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>spacingPropReg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>propMatch<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">const</span> propString <span class="token operator">=</span> propMatch<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> pxMatch <span class="token operator">=</span> propString<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>spacingReg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>pxMatch<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">const</span> pxString <span class="token operator">=</span> pxMatch<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> spacing <span class="token operator">=</span> spacingJSON<span class="token punctuation">[</span>pxString<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>spacing<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// マッチがない場合は未定義のものとして注意する</span>
+          context<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            node<span class="token punctuation">,</span>
+            message<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">undefined spacing rule: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>pxString<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> -> ??? [see utils/Spacing/index.ts(spacing.scss)]</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">const</span> definedSpacing <span class="token operator">=</span> spacing<span class="token punctuation">.</span>script<span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>definedSpacing<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// マッチした場合は候補を提案する</span>
+          context<span class="token punctuation">.</span><span class="token function">report</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            node<span class="token punctuation">,</span>
+            message<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>pxString<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> -> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>definedSpacing<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> [see utils/Spacing/index.ts(spacing.scss)]</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+            <span class="token comment">/**
+             * eslint --fix実行時に対象の箇所を自動で修正するための関数
+             */</span>
+            <span class="token function">fix</span><span class="token punctuation">(</span>fixer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">const</span> scope <span class="token operator">=</span> node<span class="token punctuation">.</span>parent<span class="token punctuation">;</span>
+
+              <span class="token keyword">const</span> sourceCode <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">getSourceCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span>scope<span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token comment">// 文字列置換</span>
+              <span class="token keyword">const</span> fixedProp <span class="token operator">=</span> propString<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>pxString<span class="token punctuation">,</span> definedSpacing<span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token keyword">const</span> fixedCode <span class="token operator">=</span> sourceCode<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>propString<span class="token punctuation">,</span> fixedProp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+              <span class="token comment">// 実際のソースコード上にも文字列置換を反映する</span>
+              <span class="token keyword">return</span> fixer<span class="token punctuation">.</span><span class="token function">replaceText</span><span class="token punctuation">(</span>scope<span class="token punctuation">,</span> fixedCode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span> <span class="token keyword">as</span> Rule<span class="token punctuation">.</span>RuleModule<span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> emotionSpacing<span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> emotionSpacing<span class="token punctuation">;</span>
+</code></pre></div><h4 id="%E3%83%86%E3%82%B9%E3%83%88%E3%82%B3%E3%83%BC%E3%83%89-1"><a class="header-anchor-link" href="#%E3%83%86%E3%82%B9%E3%83%88%E3%82%B3%E3%83%BC%E3%83%89-1" aria-hidden="true"></a> テストコード</h4>
+<p>検証として実施済みのテストコードとして下記のものになります。</p>
+<div class="code-block-container"><div class="code-block-filename-container"><span class="code-block-filename">src/rules/emotionColors.test.ts</span></div><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> RuleTester <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'eslint'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> emotionColors <span class="token keyword">from</span> <span class="token string">'./emotionColors'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> ruleTester <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RuleTester</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  parserOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    ecmaVersion<span class="token operator">:</span> <span class="token string">'latest'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  env<span class="token operator">:</span> <span class="token punctuation">{</span>
+    es6<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    browser<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ruleTester<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token string">'emotionColors'</span><span class="token punctuation">,</span> emotionColors<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 成功ケース</span>
+  valid<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`color: ${Color.White};`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token comment">// CSSinJS的な書き方ではないのでセーフ</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = `color: ${hoge};`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`${MediaQuery.mqsp} { color: ${Color.White}; }`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// 失敗ケース</span>
+  invalid<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`color: #fff;`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'#fff -> ${Color.White} [see utils/Color/index.ts(colors.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      output<span class="token operator">:</span> <span class="token string">'var style = css`color: ${Color.White};`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`color: #D1D1D1;`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'#D1D1D1 -> ${Color.Grey30} [see utils/Color/index.ts(colors.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      output<span class="token operator">:</span> <span class="token string">'var style = css`color: ${Color.Grey30};`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`color: ${hoge};`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'undefined color rule: ${hoge} -> ??? [see utils/Color/index.ts(colors.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="code-block-container"><div class="code-block-filename-container"><span class="code-block-filename">src/rules/emotionSpacing.test.ts</span></div><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> RuleTester <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'eslint'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// eslint-disable-next-line @typescript-eslint/no-var-requires</span>
+<span class="token keyword">import</span> emotionSpacing <span class="token keyword">from</span> <span class="token string">'./emotionSpacing'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> ruleTester <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RuleTester</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  parserOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    ecmaVersion<span class="token operator">:</span> <span class="token string">'latest'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  env<span class="token operator">:</span> <span class="token punctuation">{</span>
+    es6<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    browser<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ruleTester<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token string">'emotionSpacing'</span><span class="token punctuation">,</span> emotionSpacing<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 成功ケース</span>
+  valid<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`padding: ${Spacing.xxxs};`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`border: 1px solid ${Color.Grey30};`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// 失敗ケース</span>
+  invalid<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`padding: 8px;`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'8px -> ${Spacing.xxs} [see utils/Spacing/index.ts(spacing.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      output<span class="token operator">:</span> <span class="token string">'var style = css`padding: ${Spacing.xxs};`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`padding: 9px;`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'undefined spacing rule: 9px -> ??? [see utils/Spacing/index.ts(spacing.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`margin: 9px;`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'undefined spacing rule: 9px -> ??? [see utils/Spacing/index.ts(spacing.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`margin: ${hoge};`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'undefined spacing rule: ${hoge} -> ??? [see utils/Spacing/index.ts(spacing.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`padding: 64px;`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'64px -> ${Spacing.xxxl} [see utils/Spacing/index.ts(spacing.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      output<span class="token operator">:</span> <span class="token string">'var style = css`padding: ${Spacing.xxxl};`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`padding-top: 64px;`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'64px -> ${Spacing.xxxl} [see utils/Spacing/index.ts(spacing.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      output<span class="token operator">:</span> <span class="token string">'var style = css`padding-top: ${Spacing.xxxl};`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`margin-left: 64px;`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'64px -> ${Spacing.xxxl} [see utils/Spacing/index.ts(spacing.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      output<span class="token operator">:</span> <span class="token string">'var style = css`margin-left: ${Spacing.xxxl};`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`grid-column-gap: 12px; padding: 64px;`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'12px -> ${Spacing.xs} [see utils/Spacing/index.ts(spacing.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      output<span class="token operator">:</span>
+        <span class="token string">'var style = css`grid-column-gap: ${Spacing.xs}; padding: 64px;`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      code<span class="token operator">:</span> <span class="token string">'var style = css`gap: 12px; padding: 64px;`;'</span><span class="token punctuation">,</span>
+      errors<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'12px -> ${Spacing.xs} [see utils/Spacing/index.ts(spacing.scss)]'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      output<span class="token operator">:</span> <span class="token string">'var style = css`gap: ${Spacing.xs}; padding: 64px;`;'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Stylelintと同様にテスト実行はVSCodeのデバック実行機能から実行するように下記のlaunch.jsonを保存させてテストしやすい感じで実施してました。</p>
+<div class="code-block-container"><div class="code-block-filename-container"><span class="code-block-filename">launch.json</span></div><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"0.2.0"</span><span class="token punctuation">,</span>
+  <span class="token property">"configurations"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"eslint:design-guideline"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"node"</span><span class="token punctuation">,</span>
+      <span class="token property">"request"</span><span class="token operator">:</span> <span class="token string">"launch"</span><span class="token punctuation">,</span>
+      <span class="token property">"cwd"</span><span class="token operator">:</span> <span class="token string">"${workspaceFolder}/lint/eslint-plugin-design-guideline"</span><span class="token punctuation">,</span>
+      <span class="token property">"runtimeArgs"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"--experimental-modules"</span><span class="token punctuation">,</span>
+        <span class="token string">"--inspect-brk"</span><span class="token punctuation">,</span>
+        <span class="token string">"${workspaceRoot}/lint/eslint-plugin-design-guideline/node_modules/.bin/jest"</span><span class="token punctuation">,</span>
+        <span class="token string">"--runInBand"</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"console"</span><span class="token operator">:</span> <span class="token string">"integratedTerminal"</span><span class="token punctuation">,</span>
+      <span class="token property">"internalConsoleOptions"</span><span class="token operator">:</span> <span class="token string">"neverOpen"</span><span class="token punctuation">,</span>
+      <span class="token property">"port"</span><span class="token operator">:</span> <span class="token number">9229</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="stylelint%E3%81%A8eslint%E3%81%AE%E6%8B%A1%E5%BC%B5%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%BF%E3%81%A6%E3%81%AE%E6%84%9F%E6%83%B3"><a class="header-anchor-link" href="#stylelint%E3%81%A8eslint%E3%81%AE%E6%8B%A1%E5%BC%B5%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%BF%E3%81%A6%E3%81%AE%E6%84%9F%E6%83%B3" aria-hidden="true"></a> StylelintとESLintの拡張を書いてみての感想</h2>
+<p>全体的に正規表現で頑張っている感は正直否めないとこだと思います。<br>
+Lintの対象範囲についてはCSS限定にかけるStylelintは書きやすい反面、どうしてもESLintは変数の定義としてのスコープとなってしまうのでStyle属性に絞りこむにはどうしたら良いのか？となることが多かったです。<br>
+ESLint側のみfixによるコードの変更対応をすすめましたが置換の範囲を間違えると既存のソースが消えることがあり完成するまでが大変でした。<br>
+引き続きルールの拡張を進めるのとともに定着化を進めていきたいと思います。</p>
+
+</div>
