@@ -196,7 +196,7 @@ npm run build
 
 [index.ts](https://github.com/igara/textlint-custom-rule/blob/main/packages/textlint-rule-writing-guideline/src/index.ts)に対して[invalid.tsx(lintにひっかかる)](https://github.com/igara/textlint-custom-rule/blob/main/packages/textlint-rule-writing-guideline/test/inputs/invalid.tsx)と[valid.tsx(lintにひっかからない)](https://github.com/igara/textlint-custom-rule/blob/main/packages/textlint-rule-writing-guideline/test/inputs/valid.tsx)文章をテストするコードです。
 
-[.vscode/launch.json](https://github.com/igara/textlint-custom-rule/blob/main/.vscode/launch.json)二でバッグの設定も入れているのでVSCodeのデバッグ機能も有効になっています。
+[.vscode/launch.json](https://github.com/igara/textlint-custom-rule/blob/main/.vscode/launch.json)によってデバッグの設定も入れているのでVSCodeのデバッグ機能も有効になっています。
 
 ## その他伝えたいこと
 
