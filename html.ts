@@ -19,6 +19,7 @@ svg {
   width: 20px;
 }
 </style>
+<script src="https://embed.zenn.studio/js/listen-embed-event.js"></script>
 <div class="znc">
   ${html.replace(
     /img src="/g,

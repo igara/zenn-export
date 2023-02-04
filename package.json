@@ -22,7 +22,8 @@
     "@types/node": "17.0.23",
     "ts-node": "10.7.0",
     "typescript": "4.6.3",
-    "zenn-cli": "0.1.108",
-    "zenn-content-css": "0.1.108"
+    "zenn-cli": "0.1.137",
+    "zenn-content-css": "0.1.137",
+    "zenn-markdown-html": "0.1.137"
   }
 }
