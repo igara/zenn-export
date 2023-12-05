@@ -14,7 +14,7 @@ published: true
 
 UIの実装でブラウザのデフォルトのスタイルが表示されてしまってブラウザごとにスタイルが異なることがあると思います。
 
-![ios_vrt_result](/images/ios_sim_vrt/ios_vrt_result.png)
+![ios_vrt_result](/images/ios_sim_vrt_tips/ios_vrt_result.png)
 
 その他、GitHub ActionsのWorkflowを活用してみたら色々活用できそうというのが見えてきたので諸々解説していきたいと思います。
 
@@ -38,19 +38,19 @@ https://github.com/igara/vrt_sample
 
 実行タイミングを `workflow_dispatch` にしているのでActionsのUIから実行します。
 
-![workflow_dispatch](/images/ios_sim_vrt/workflow_dispatch.png)
+![workflow_dispatch](/images/ios_sim_vrt_tips/workflow_dispatch.png)
 
 Run workflowから比較対象のブランチやハッシュ、タグからでも実行可能なので導入が早ければ大昔のと最新の差分をソースコードではなくビジュアル的に可視化することも使い方によっては可能になると思います。
 
 実行が完了するとActionsのArtifactsにVRTの結果のレポートをダウンロードできるようになります。
 
-![artifacts](/images/ios_sim_vrt/artifacts.png)
+![artifacts](/images/ios_sim_vrt_tips/artifacts.png)
 
 ActionsのArtifactsは保存できる期間が決まっているのでレポート出力後にreleases機能でGitのタグを作るついでにVRTのレポート結果も一緒にアップロードしてあげるといいかもしれません。
 
 https://github.com/igara/vrt_sample/releases/tag/20231205-02
 
-![releases](/images/ios_sim_vrt/releases.png)
+![releases](/images/ios_sim_vrt_tips/releases.png)
 
 ## 問題点・まとめ
 
