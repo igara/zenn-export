@@ -60,6 +60,4 @@ Actionsで実行させる前に自分のローカル環境でもiOSのVRT実行�
 
 `appium-doctor --ios` が通ることが最小限ですがiOSシミュレータのSafariを使用するぐらいなら [appium-safari-driver](https://github.com/appium/appium-safari-driver) を使えば良いという結論になったのも情報が少ないながらも頑張ったなと思いました。
 
-![ios_snapshot](/images/ios_sim_vrt/ios_snapshot.gif)
-
-シミュレート起動して作成したStoryのものが画面に表示したときは感動しました。
+シミュレータ起動して作成したStoryのものが画面に表示したときは感動しました。
