@@ -16,7 +16,7 @@ Blenderでモデルを作成してstlファイルに出力すれば結構色々�
 
 ## ボルトを作成する
 
-Blenderの拡張で[Bolt Factory](https://docs.blender.org/manual/en/latest/addons/add_mesh/boltfactory.html))というのがあります。
+Blenderの拡張で[Bolt Factory](https://docs.blender.org/manual/en/latest/addons/add_mesh/boltfactory.html)というのがあります。
 
 BlenderのメニューからEdit -> Preferences -> Add-onsから「bolt」と検索すると「Bolt Factory」をインストールすることで使えるようになります。
 
