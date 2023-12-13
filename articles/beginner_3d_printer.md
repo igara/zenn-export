@@ -48,7 +48,7 @@ BlenderのメニューからEdit -> Preferences -> Add-onsから「bolt」と検
 
 シャフトはネジの箇所はBot Factoryで作成し、[2BA](https://www.dartshive.jp/html/page361.html)という規格なのでそれっぽく編集しました。
 
-あとは細長い円柱を追加し、フライト箇所の凹部分は[Booleanモディファイアー](https://docs.blender.org/manual/ja/dev/modeling/modifiers/generate/booleans.html))を適応して作りました。
+あとは細長い円柱を追加し、フライト箇所の凹部分は[Booleanモディファイアー](https://docs.blender.org/manual/ja/dev/modeling/modifiers/generate/booleans.html)を適応して作りました。
 
 凹部分が衝撃に弱く1回投げただけで破壊しました。
 
@@ -62,7 +62,7 @@ BlenderのメニューからEdit -> Preferences -> Add-onsから「bolt」と検
 
 プリントするときに上の方が出来上がってくると段々バランスが崩れて倒れるので途中木工用ボンドで固定して印刷しました。
 
-投げた結果ですが多様は耐久性は上がったのですが4~5回ぐらいでネジ箇所が弱りネジのとこで折れ、バレルに詰まりました。
+投げた結果ですが多少は耐久性は上がったのですが4~5回ぐらいでネジ箇所が弱りネジのとこで折れ、バレルに詰まりました。
 
 ### 試作3 未完成
 
