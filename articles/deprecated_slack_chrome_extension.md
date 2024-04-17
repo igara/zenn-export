@@ -3,7 +3,7 @@ title: "公式Slack Appを作成せずにSlackツールをChrome拡張で作成�
 emoji: "⚠️"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["deprecated", "slack", "chromeextension"]
-published: false
+published: true
 publication_name: chot
 ---
 
