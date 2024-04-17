@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "hediet.vscode-drawio"
+    "hediet.vscode-drawio",
+    "taichi.vscode-textlint"
   ]
 }

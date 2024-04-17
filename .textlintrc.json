@@ -1,0 +1,24 @@
+{
+  "plugins": {},
+  "filters": {},
+  "rules": {
+    "preset-ja-technical-writing": {
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": [
+          ":"
+        ]
+      },
+      "no-exclamation-question-mark": false,
+      "max-kanji-continuous-len": false,
+      "sentence-length": {
+        "max": 120
+      }
+    },
+    "preset-ja-spacing": {
+      "ja-space-around-code": {
+        "before": true,
+        "after": true
+      }
+    }
+  }
+}
