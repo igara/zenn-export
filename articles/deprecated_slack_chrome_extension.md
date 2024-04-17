@@ -1,5 +1,5 @@
 ---
-title: "【非推奨】公式Slack Appを作成せずにSlackツールをChrome拡張で作成する技術"
+title: "公式Slack Appを作成せずにSlackツールをChrome拡張で作成する技術"
 emoji: "⚠️"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["deprecated", "slack", "chromeextension"]
@@ -10,7 +10,7 @@ publication_name: chot
 # この記事について
 
 :::message
-ここで出てくるSlackのトークンは公式で明示されていないトークン使用例のためお勧めできる方法ではありません。
+ここで出てくるSlackのトークンは公式で明示されていないトークン使用例のためおすすめできる方法ではありません。
 トークンは個人ユーザに対してのものになりますので問題などは個人責任でよろしくお願いします。
 
 この記事を閲覧するモチベーションとして下記を意識し、アイデアを広げるためのものと認識して閲覧してください。
@@ -82,7 +82,7 @@ backgroundのスクリプトはHTML上で動作する環境とは異なり、Nod
 
 # 最後に
 
-重ねてですが今回の方法はお勧めできる方法ではありません。
+重ねてですが今回の方法はおすすめできる方法ではありません。
 ですが、ちょっとしたハックで抜け道的に個人の業務改善や趣味に活用するための発想転換方法として思い出していただければ考えています。
 
 # 参考リンク
@@ -95,6 +95,6 @@ backgroundのスクリプトはHTML上で動作する環境とは異なり、Nod
   - このコメントをきっかけにSlack Appではないトークンの仕組みについて知った
   - Chromeの開発者ツールでxoxcトークンの存在は知っていたが、Cookieの値の `d` が必要というのを知った
 - https://stackoverflow.com/questions/62759949/accessing-slack-api-with-chrome-authentication-token-xoxc
-  - Slack APIを使用するなら適切なスコープでSlack Appを作成することをお勧めするのは正しい
+  - Slack APIを使用するなら適切なスコープでSlack Appを作成することをすすめるのは正しい
 - https://zenn.dev/hosyan/articles/342fb29e9da76f
   - 数少ないxoxcトークンを使用したツールの例として観測した記事
