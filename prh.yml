@@ -1,0 +1,6 @@
+version: 1
+rules:
+  - expected: おすすめ
+    patterns: お薦め
+  - expected: おすすめ
+    patterns: お勧め
