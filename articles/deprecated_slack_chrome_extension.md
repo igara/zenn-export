@@ -71,7 +71,7 @@ Chrome拡張は権限を許可することによって使用できるAPIがあ�
 https://developer.chrome.com/docs/extensions/reference/permissions-list?hl=ja
 
 
-今回は `cookies` を許可してHttpOnlyのCookieをbackgroundのスクリプトから取得しています。
+`cookies` を許可してHttpOnlyのCookieをbackgroundのスクリプトから取得しています。
 
 今回は[@crxjs/vite-plugin](https://crxjs.dev/vite-plugin)を使用したもので[manifest.json](https://developer.chrome.com/docs/extensions/reference/manifest?hl=ja)の記載は[vite.config.ts](https://github.com/igara/slack_message_chrome_extension/blob/main/vite.config.ts)に記載しています。
 
