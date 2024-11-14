@@ -25,9 +25,9 @@ https://martijnhols.nl/gists/everything-about-google-translate-crashing-react
       - [eslint-plugin-sayari](https://github.com/sayari-analytics/eslint-plugin-sayari)というESLintプラグインが `no-unwrapped-jsx-text` というルールでタグで囲むように矯正できる
     - 多言語化対応
 - [Reactだけではない](https://martijnhols.nl/gists/everything-about-google-translate-crashing-react#not-just-react)
-  - Virtual DOMの書き換えによって起こる問題ではないため
-    - 他のViewを扱うライブラリでも起こり得る
-    - Chromeの拡張でDOMの内容を変えるものなら起こり得る
+  - Virtual DOMの書き換えによって起こる問題なので
+    - 他のVirtual DOMを扱うライブラリでも起こり得る
+    - Chromeの拡張でVirtual DOMの内容を変えるものなら起こり得る
 
 # 経緯（思い出）
 
