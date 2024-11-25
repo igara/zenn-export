@@ -3,7 +3,7 @@ title: "ReactのページでGoogle翻訳するとエラーになる事象"
 emoji: "📑"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["react", "translation"]
-published: false
+published: true
 publication_name: chot
 ---
 
