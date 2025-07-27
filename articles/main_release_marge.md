@@ -28,7 +28,7 @@ https://github.com/igara/git-merge-pr-sample
 
 mainに直でGitHub ActionsのYAMLをコミット&プッシュしたのでPRに各ブランチにYAMLの差分を取り込むようなPRが作成されている
 
-## .github/workflows/main_release_marge.yml
+## [.github/workflows/main_release_marge.yml](https://github.com/igara/git-merge-pr-sample/blob/main/.github/workflows/main_release_marge.yml)
 
 GitHub ActionsのWorkflowの内容として下記の詳細に記載
 
