@@ -1,6 +1,6 @@
 ---
 title: "mainブランチマージしたら他のブランチにもマージPRを作成するGitHub Actions"
-emoji: "🪾"
+emoji: "🌲"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["githubactions"]
 published: false
@@ -32,7 +32,7 @@ mainに直でGitHub ActionsのYAMLをコミット&プッシュしたのでPRに�
 
 GitHub ActionsのWorkflowの内容として下記の詳細に記載
 
-<details>
+:::details .github/workflows/main_release_marge.yml
 
 ```yaml
 name: main branch Release Marge
@@ -73,7 +73,7 @@ jobs:
         continue-on-error: true
 ```
 
-</details>
+:::
 
 ### 注意点
 
