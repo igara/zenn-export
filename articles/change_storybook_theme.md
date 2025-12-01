@@ -3,7 +3,7 @@ title: "Storybook上でCSSを書き換えてテーマの変更"
 emoji: "🎨"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["storybook", "css", "tailwindcss", "shadcnui"]
-published: false
+published: true
 publication_name: chot
 ---
 
