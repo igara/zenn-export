@@ -3,7 +3,7 @@ title: "Shadow DOMでIslands Architectureっぽく(CSS編)"
 emoji: "🎨"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["shadowdom", "architecture", "tailwindcss"]
-published: false
+published: true
 publication_name: chot
 ---
 
@@ -41,7 +41,7 @@ Next.jsとReactのアプリケーションは同じshadcn/uiで実装したコ�
 
 ### Next.jsアプリケーション
 
-- [next.config.ts](https://github.com/igara/multi-fw-demo/blob/main/packages/nextjs/next.config.ts)
+- [next.config.ts](https://github.com/igara/multi-fw-demo/blob/67e70a77d67cfa12074c5d1550b46fdd497f5d5b/packages/nextjs/next.config.ts)
   ```ts:next.config.ts
   const nextConfig: NextConfig = {
     output: "export",
@@ -52,14 +52,14 @@ Next.jsとReactのアプリケーションは同じshadcn/uiで実装したコ�
   };
   ```
   GitHub Pagesに展開するためSSGで出力
-- [/app/multi/page.tsx](https://github.com/igara/multi-fw-demo/blob/main/packages/nextjs/app/multi/page.tsx)
+- [/app/multi/page.tsx](https://github.com/igara/multi-fw-demo/blob/67e70a77d67cfa12074c5d1550b46fdd497f5d5b/packages/nextjs/app/multi/page.tsx)
   /multi-fw-demo/nextjs/multiに今回のサンプルページを作るために設置
 
 ### Reactアプリケーション
 
 TanStack RouterによるRoute設定
 
-- [src/main.tsx](https://github.com/igara/multi-fw-demo/blob/main/packages/react/src/main.tsx)
+- [src/main.tsx](https://github.com/igara/multi-fw-demo/blob/67e70a77d67cfa12074c5d1550b46fdd497f5d5b/packages/react/src/main.tsx)
   ```tsx:main.tsx
   let basePath = "/multi-fw-demo/react/";
   if (window.location.pathname.startsWith("/multi-fw-demo/nextjs")) {
@@ -82,7 +82,7 @@ TanStack RouterによるRoute設定
 
 Vue RouterによるRoute設定
 
-- [src/router/index.ts](https://github.com/igara/multi-fw-demo/blob/main/packages/vue2/src/router/index.ts)
+- [src/router/index.ts](https://github.com/igara/multi-fw-demo/blob/67e70a77d67cfa12074c5d1550b46fdd497f5d5b/packages/vue2/src/router/index.ts)
   ```ts:src/router/index.ts
   const routes: Array<RouteConfig> = [
     {
@@ -108,8 +108,8 @@ Vue RouterによるRoute設定
 
 ## Shadow DOM上にアプリケーションを展開するためのコード
 
-- [React](https://github.com/igara/multi-fw-demo/blob/main/packages/nextjs/app/multi/components/ReactAppLoader.tsx)
-- [Vue2](https://github.com/igara/multi-fw-demo/blob/main/packages/nextjs/app/multi/components/Vue2AppLoader.tsx)
+- [React](https://github.com/igara/multi-fw-demo/blob/67e70a77d67cfa12074c5d1550b46fdd497f5d5b/packages/nextjs/app/multi/components/ReactAppLoader.tsx)
+- [Vue2](https://github.com/igara/multi-fw-demo/blob/67e70a77d67cfa12074c5d1550b46fdd497f5d5b/packages/nextjs/app/multi/components/Vue2AppLoader.tsx)
 
 この2つのコードの違いとしてDOMのid指定が`react-app`か`vue2-app`になっている点ぐらいです。
 
