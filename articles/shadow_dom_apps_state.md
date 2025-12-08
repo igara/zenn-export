@@ -3,7 +3,7 @@ title: "Shadow DOMでIslands Architectureっぽく(状態管理編)"
 emoji: "☸"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["shadowdom", "architecture", "react", "vue"]
-published: false
+published: true
 publication_name: chot
 ---
 
