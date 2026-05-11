@@ -85,6 +85,9 @@ Top AS Names（プロバイダー名）で怪しいとこだけが引っ掛か�
 *Vercelに設定したCustomRulesのLog一覧*
 
 - Top JA4 Digests
+    - [JA4はTLS Fingerprint](https://vercel.com/docs/vercel-firewall/firewall-concepts#ja4)
+        - TLSハンドシェイクの詳細（バージョン、サポートする暗号スイート、拡張など）からハッシュを生成したもの
+        - IPやUser Agentと違いクライアント側で容易に変更しにくいため、より信頼性が高い識別子となる
     - 完全一意ではないけどIP、User Agentよりかは信頼性が高い
     - 多いものに対してCustomRulesよりlog監視対象にしておくと良さそう
 - Top Request Paths
