@@ -3,7 +3,7 @@ title: "Vercelのコストを抑えるためにBot対策する"
 emoji: "😠"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["vercel"]
-published: false
+published: true
 publication_name: chot
 ---
 
